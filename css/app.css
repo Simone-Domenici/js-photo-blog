@@ -18,3 +18,27 @@ header {
 .main-title {
     font-size: 70px;
 }
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: calc(100% / 3);
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col {
+    width: 100%;
+}
