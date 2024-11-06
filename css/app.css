@@ -78,3 +78,22 @@ header {
 .mb-24 {
     margin-bottom: 24px;
 }
+
+@media (max-width: 992px) {
+    .container {
+        width: 680px;
+    }
+    .col-4.card-col {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .col-4.card-col {
+        width: 100%;
+    }
+    
+}
