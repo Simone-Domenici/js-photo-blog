@@ -22,8 +22,6 @@ header {
 .container {
     width: 1024px;
     margin: 0 auto;
-    border: 1px solid black;
-    height: 100px;
 }
 
 .row {
@@ -41,4 +39,42 @@ header {
 
 .col {
     width: 100%;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+}
+
+.wrapper {
+    padding: 15px;
+}
+
+.card-img {
+    min-width: 265px;
+    aspect-ratio: 1/1;
+    background-color: blue;
+    margin-bottom: 15px;
+}
+
+/* Utilities */
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
 }
