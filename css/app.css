@@ -79,11 +79,6 @@ header {
     top: 0;
 }
 
-.overlay-display {
-    display: none;
-    overflow: hidden;
-}
-
 .overlay-img-container {
     max-width: 600px;
     aspect-ratio: 1/1;
@@ -117,6 +112,14 @@ header {
 
 .mb-24 {
     margin-bottom: 24px;
+}
+
+.d-none {
+    display: none;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
 @media (max-width: 992px) {
