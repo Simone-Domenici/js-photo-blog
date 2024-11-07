@@ -1,4 +1,5 @@
 const postRow = document.querySelector('.post-row')
+const imgFocus = document.querySelector('.overlay-img-container img')
 
 axios
 	.get('https://jsonplaceholder.typicode.com/photos', {
@@ -22,8 +23,10 @@ function appendPosts(posts, root) {
 		const url = post.url
         console.log(url, title)
 
+		const cardWrapper = document.createElement('div');
+		cardWrapper.className = 'col-4 d-flex justify-center mb-24 card-col'
+ 
         const postCardHTML = `
-        <div class="col-4 d-flex justify-center mb-24 card-col">
             <div class="card">
                 <div class="wrapper">
                     <div class="card-img"><img src="${url}"></div>
@@ -31,8 +34,21 @@ function appendPosts(posts, root) {
 					<img class="pin-img" src="./img/pin.svg">
                 </div>
             </div>
-        </div>
         `
-		root.innerHTML += postCardHTML
+		cardWrapper.innerHTML = postCardHTML
+		root.append(cardWrapper) 
+
+		cardWrapper.addEventListener('click', openPostsImg);
 	})
 }
+
+function openPostsImg(event) {
+	const clickedElement = event.target;
+	const clickedCard = clickedElement.closest('.card');
+
+  if (clickedCard) {
+    const clickedImageUrl = clickedCard.querySelector('.card-img img').src;
+	imgFocus.src = clickedImageUrl;
+	console.log(clickedImageUrl)
+  }
+}  
