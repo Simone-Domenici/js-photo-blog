@@ -44,6 +44,14 @@ header {
 .card {
     width: 300px;
     background-color: white;
+    position: relative;
+}
+
+.pin-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
 }
 
 .wrapper {

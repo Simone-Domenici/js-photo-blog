@@ -28,6 +28,7 @@ function appendPosts(posts, root) {
                 <div class="wrapper">
                     <div class="card-img"><img src="${url}"></div>
                     <p>${title}</p>
+					<img class="pin-img" src="./img/pin.svg">
                 </div>
             </div>
         </div>
