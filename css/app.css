@@ -81,8 +81,14 @@ header {
 }
 
 .overlay-img-container {
-    max-width: 600px;
+    max-width: 80vw;
     aspect-ratio: 1/1;
+    margin: 0 30vw;
+}
+
+.overlay-img-container img {
+    max-width: 100%;
+    height: auto;
 }
 
 .x-mark {
