@@ -68,6 +68,31 @@ header {
     width: 265px;
 }
 
+.overlay {
+    background-color: rgba(0 , 0 , 0 , 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-img-container {
+    max-width: 600px;
+    aspect-ratio: 1/1;
+}
+
+.x-mark {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 40px;
+    color: white;
+}
+
 /* Utilities */
 
 .justify-center {
